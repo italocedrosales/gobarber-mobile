@@ -8,16 +8,14 @@ import AppProvider from './hooks';
 
 import Routes from './routes';
 
-const App: React.FC = () => {
-  return (
-    <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="#312e38" />
+const App: React.FC = () => (
+  <NavigationContainer>
+    <StatusBar barStyle="light-content" backgroundColor="#312e38" />
 
-      <AppProvider>
-        <Routes />
-      </AppProvider>
-    </NavigationContainer>
-  );
-};
+    <AppProvider>
+      <Routes />
+    </AppProvider>
+  </NavigationContainer>
+);
 
 export default App;
